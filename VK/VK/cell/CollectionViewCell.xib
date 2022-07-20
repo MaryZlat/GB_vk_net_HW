@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="VK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="236" height="199"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="236" height="199"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HTF-st-wAw">
+                        <rect key="frame" x="48.5" y="30" width="139" height="139"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="HTF-st-wAw" secondAttribute="height" multiplier="1:1" id="guA-Hx-yQG"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrA-YY-p8b" customClass="LikeView" customModule="VK" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="169" width="236" height="30"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="HTF-st-wAw" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Cnm-12-ZEA"/>
+                <constraint firstItem="zrA-YY-p8b" firstAttribute="top" secondItem="HTF-st-wAw" secondAttribute="bottom" id="Ewh-l1-pcr"/>
+                <constraint firstAttribute="bottom" secondItem="zrA-YY-p8b" secondAttribute="bottom" id="LEe-YX-fXC"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="HTF-st-wAw" secondAttribute="bottom" constant="30" id="a6s-WI-B08"/>
+                <constraint firstItem="zrA-YY-p8b" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="jVO-8N-br1"/>
+                <constraint firstItem="HTF-st-wAw" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="mw5-CO-smj"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="zrA-YY-p8b" secondAttribute="trailing" id="yS5-dl-VqD"/>
+            </constraints>
+            <size key="customSize" width="236" height="199"/>
+            <connections>
+                <outlet property="photoImageView" destination="HTF-st-wAw" id="j0x-qy-gIp"/>
+            </connections>
+            <point key="canvasLocation" x="113.04347826086958" y="107.47767857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
